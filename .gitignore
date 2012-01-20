@@ -1,0 +1,7 @@
+.gradle/
+stacktrace.log
+.classpath
+build/
+target/
+.project
+.settings

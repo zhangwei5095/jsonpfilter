@@ -1,0 +1,16 @@
+subprojects {
+	apply plugin: 'eclipse'
+	apply plugin: 'maven'
+
+	configurations {
+		all*.exclude group: "commons-logging", module: "commons-logging"
+	}
+
+	task wrapper(type: Wrapper) {
+        	gradleVersion = "1.0-milestone-3"
+	}
+
+	group='com.ml'
+}
+
+dependsOnChildren()
